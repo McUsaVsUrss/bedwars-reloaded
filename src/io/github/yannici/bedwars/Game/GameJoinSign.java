@@ -30,15 +30,10 @@ public class GameJoinSign {
 
 	private String[] getSignLines() {
 		String[] sign = new String[4];
-		sign[0] = this.replacePlaceholder(ChatColor.translateAlternateColorCodes('&',
-				Main.getInstance().getConfig().getString("sign.first-line")));
-		sign[1] = this.replacePlaceholder(ChatColor.translateAlternateColorCodes('&',
-				Main.getInstance().getConfig().getString("sign.second-line")));
-		sign[2] = this.replacePlaceholder(ChatColor.translateAlternateColorCodes('&',
-				Main.getInstance().getConfig().getString("sign.third-line")));
-		sign[3] = this.replacePlaceholder(ChatColor.translateAlternateColorCodes('&',
-				Main.getInstance().getConfig().getString("sign.fourth-line")));
-
+		sign[0] = this.replacePlaceholder(ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("sign.first-line")));
+		sign[1] = this.replacePlaceholder(ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("sign.second-line")));
+		sign[2] = this.replacePlaceholder(ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("sign.third-line")));
+		sign[3] = this.replacePlaceholder(ChatColor.translateAlternateColorCodes('&', Main.getInstance().getConfig().getString("sign.fourth-line")));
 		return sign;
 	}
 
